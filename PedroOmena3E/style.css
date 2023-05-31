@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* border: 1px solid red; */
+
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.titulo p{
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.navbar{
+    border: 1px solid black;
+    padding: 1rem;
+}
+.nav{
+    display: flex;
+    gap: 2rem;
+}
+.nav a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.image1{grid-area: Foto1;}
+.image2{grid-area: Foto2;}
+.image3{grid-area: Foto3;}
+.image4{grid-area: Foto4;}
+.images{
+    display: grid;
+    grid-template-areas: 
+    'Foto1 Foto1 Foto2'
+    'Foto3 Foto4 Foto2';
+
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    padding: 1rem;
+    /* border: 1px solid red; */
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+    /* border: 1px solid red; */
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem ;
+}
+.icons{
+    display: flex;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
